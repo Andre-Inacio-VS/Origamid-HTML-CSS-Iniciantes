@@ -6,11 +6,13 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 120px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
   position: relative;
 }
 
-.formacao-contrainer::after,
-.grid::after {
+.formacao-container::after {
   content: "";
   display: block;
   width: 130px;
@@ -19,7 +21,6 @@
   background: url(../img/detalhe.svg) no-repeat center;
   bottom: -50px;
   left: 20px;
-  z-index: 1;
 }
 
 .formacao {
@@ -140,7 +141,7 @@
 }
 
 @media (max-width: 800px) {
-  .formacao .grid {
+  .formacao-container {
     grid-template-columns: 1fr;
     padding: 60px 40px;
     gap: 40px;
@@ -155,8 +156,8 @@
   }
 
   .formacao-extra h3::before {
-   position: initial;
-   margin-bottom: 10px;
+    position: initial;
+    margin-bottom: 10px;
   }
 
   .cursos li {
