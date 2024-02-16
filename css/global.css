@@ -1,48 +1,57 @@
 body {
-    font-family: "Fira Sans", Arial, sans-serif;
-    margin: 0;
-    color: #141414;
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0;
+  color: #141414;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-h1, h2, h3, p {
-    margin: 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 .subtitulo {
-    font-size: 8rem;
-    font-weight: bold;
-    word-break: break-all;
-    line-height: 1;
-    max-width: 4ch;
-    text-transform: uppercase;
+  font-size: 8rem;
+  font-weight: bold;
+  word-break: break-all;
+  line-height: 1;
+  max-width: 4ch;
+  text-transform: uppercase;
 }
 
 @media (max-width: 800px) {
-    .subtitulo {
-        font-size: 3rem;
-        max-width: initial;
-        text-transform: capitalize;
-    }
+  .subtitulo {
+    font-size: 3rem;
+    max-width: initial !important;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 500px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
 }
