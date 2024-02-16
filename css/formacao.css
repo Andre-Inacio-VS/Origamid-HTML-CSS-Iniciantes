@@ -1,5 +1,7 @@
-.grid {
-  gap: 100px;
+.formacao {
+  width: auto;
+  background-color: #141414;
+  color: #ffffff;
 }
 
 .formacao-container {
@@ -21,11 +23,6 @@
   background: url(../img/detalhe.svg) no-repeat center;
   bottom: -50px;
   left: 20px;
-}
-
-.formacao {
-  background-color: #141414;
-  color: #ffffff;
 }
 
 .formacao .subtitulo {
@@ -55,10 +52,21 @@
 .faculdade {
   background-color: #000000;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 5px;
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.faculdade:hover {
+  scale: 1.03;
+  transform: rotateZ(-1deg);
+  transition: 300ms;
+}
+
+.faculdade:not(:hover) {
+  scale: 1;
+  transition: 300ms;
 }
 
 .faculdade-tipo {
@@ -169,5 +177,11 @@
     background: rgba(100, 100, 100, 10%);
     padding: 2px 10px;
     border-radius: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-container {
+    max-width: 100%;
   }
 }

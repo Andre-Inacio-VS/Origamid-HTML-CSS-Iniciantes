@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 .header-menu {
     display: flex;
@@ -16,6 +18,13 @@
     display: block;
     justify-content: center;
     color: #141414;
+    border-radius: 5px;
+}
+
+.header-menu a:hover {
+    cursor: pointer;
+    background-color: #67dd0a;
+    transition: 500ms;
 }
 
 @media (max-width: 800px) {
@@ -32,5 +41,16 @@
 
     .header-menu {
         gap: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .header-menu {
+        gap: 10px;
+    }
+
+    .header-menu a {
+        padding: 5px 10px;
+        font-size: .875rem;
     }
 }

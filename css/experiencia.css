@@ -1,4 +1,9 @@
 .experiencia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 100px;
 }
 
@@ -27,6 +32,16 @@
     border-radius: 4px;
     margin-bottom: 20px;
     position: relative;
+}
+
+.empresa:hover {
+    transform: rotateZ(-2deg);
+    transition: 500ms;
+}
+
+.empresa:not(:hover) {
+    transform: rotateZ(0deg);
+    transition: 500ms;
 }
 
 .empresa::before {
